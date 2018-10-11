@@ -35,7 +35,7 @@ for f in `find . -name libplugin.dylib`; do install_name_tool -change libCartaLi
 
 
 # 2. Download and run the make-app-carta script (The make-app-carta script fixed by Grimmer):
-curl -O https://raw.githubusercontent.com/CARTAvis/deploytask2018/make-app-carta
+curl -O https://raw.githubusercontent.com/CARTAvis/deploytask2018/master/make-app-carta
 sed -i '' 's|\/Users\/rpmbuild\/Qt5.7.0\/5.7\/clang_64|'"${qtpath}"'|g' make-app-carta
 chmod 755 make-app-carta
 rm -rf $packagepath
